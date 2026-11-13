@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // Minh họa 2 giới hạn của quản lý State cục bộ (setState):
-// 1. Prop Drilling: Cha phải truyền biến và hàm callback xuống từng Widget con.
-// 2. Rebuild dư thừa: Khi Cha gọi setState(), các Widget con không liên quan cũng bị build() lại.
+// 1.Prop Drilling: Cha phải truyền biến và hàm callback xuống từng Widget con.
+// 2.Rebuild dư thừa: Khi Cha gọi setState(), các Widget con không liên quan cũng bị build() lại.
 class LocalStateLimitDemo extends StatefulWidget {
   const LocalStateLimitDemo({super.key});
 

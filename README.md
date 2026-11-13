@@ -5,20 +5,18 @@
 - **Chủ đề 10:** Cơ sở quản lý trạng thái và cập nhật giao diện trong Flutter
 - **Giảng viên hướng dẫn:** TS. Nguyễn Duy Nhật Viễn
 - **Sinh viên thực hiện:**
-  1. Phan Vĩnh Sơn - Nhóm trưởng
-  2. Vũ Duy Dương - Thành viên
+  1. Phan Vĩnh Sơn
+  2. Vũ Duy Dương
 
 ---
 
-## 1. Bảng phân công công việc (WBS)
+## 1. Bảng phân công công việc
 
-| STT | Nhiệm vụ (WBS) | Vai trò | Người phụ trách | Sản phẩm bàn giao |
-| :---: | :--- | :--- | :---: | :--- |
-| 1 | UI Design | Thiết kế giao diện demo, bố cục slide | Phan Vĩnh Sơn | Giao diện 2 màn hình demo, Slide báo cáo |
-| 2 | Business Logic | Xây dựng logic đếm số, tương tác người dùng | Phan Vĩnh Sơn | lib/demos/state_lifecycle_demo.dart |
-| 3 | State Management | Phân tích vòng đời State, giới hạn setState | Vũ Duy Dương | lib/demos/local_state_limit_demo.dart |
-| 4 | Database / Local Data | Quản lý trạng thái bộ nhớ cục bộ trong State | Vũ Duy Dương | Cấu trúc State lưu trữ tạm thời |
-| 5 | Báo cáo & Slide | Biên soạn tài liệu lý thuyết, sơ đồ vòng đời | Cả nhóm | NOI_DUNG_SLIDE.md, README.md |
+| Thành viên | Vai trò | Tệp phụ trách trong `lib/` | Nội dung đảm nhiệm |
+| :--- | :--- | :--- | :--- |
+| **Phan Vĩnh Sơn** | State Lifecycle & UI Rendering | [`lib/demos/state_lifecycle_demo.dart`](lib/demos/state_lifecycle_demo.dart) | - Phân biệt bản chất giữa `StatelessWidget` và `StatefulWidget`.<br>- Khởi tạo và theo dõi các hàm vòng đời State: `initState()`, `build()`, `dispose()`.<br>- Cập nhật giao diện động theo trạng thái thông qua hàm `setState()`. |
+| **Vũ Duy Dương** | Local State Limits & Prop Drilling | [`lib/demos/local_state_limit_demo.dart`](lib/demos/local_state_limit_demo.dart) | - Kỹ thuật nâng trạng thái lên Cha (`Lifting State Up`) để chia sẻ dữ liệu.<br>- Minh họa truyền dữ liệu và callback (`onAdd`) qua `ChildDisplay`, `ChildButton` (`Prop Drilling`).<br>- Kiểm chứng hiện tượng rebuild dư thừa trên `UnrelatedChild` khi không dùng `const`. |
+| **Cả 2 Thành viên** | System Integration & UI Navigation | [`lib/main.dart`](lib/main.dart) | - Xây dựng giao diện Tab điều hướng bằng `DefaultTabController` và `TabBarView` tại `main.dart`.<br>- Kiểm chuẩn chất lượng mã nguồn bằng `flutter analyze` và `flutter test` (`widget_test.dart`).<br>- Hoàn thiện tài liệu báo cáo và slide thuyết trình. |
 
 ---
 

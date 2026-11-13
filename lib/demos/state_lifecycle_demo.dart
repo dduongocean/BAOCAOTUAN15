@@ -97,6 +97,11 @@ class _CounterLifecycleBoxState extends State<_CounterLifecycleBox> {
 
     return Column(
       children: [
+        const Text(
+          'Đây là StatefulWidget (Giao diện động)',
+          style: TextStyle(fontSize: 14, color: Colors.blueGrey),
+        ),
+        const SizedBox(height: 6),
         Text(
           'Giá trị State hiện tại: $_count',
           style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
